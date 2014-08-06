@@ -1,4 +1,6 @@
+##set working directory
 setwd("~/Exp Data Analysis/project 1")
+##if data does not already exist read it in and process
 if( !exists("power_data")) {
   print("reading data")
   power_data<-read.csv("household_power_consumption.txt", sep=";", na.strings = "?", as.is=TRUE)
@@ -9,3 +11,4 @@ if( !exists("power_data")) {
 png(filename = "plot2.png", width = 480, height = 480, units = "px")
 plot(power2$DateTime, power2$Global_active_power,  type="l", ylab= "Global Active Power (killowatts)",xlab="",main = "Global Active Power")
 dev.off()
+

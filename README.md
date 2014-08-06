@@ -1,3 +1,7 @@
+## Peer Assessment submission by Scott Garren
+
+R scipts plot1-plot4 must be in the same directory as the data file, household_data_consumption.txt. When executed they will produce the plot PNG files submitted.
+
 ## Introduction
 
 This assignment uses data from
